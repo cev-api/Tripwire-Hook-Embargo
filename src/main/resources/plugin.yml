@@ -1,0 +1,16 @@
+name: TripwireHookEmbargo
+version: ${version}
+main: me.mimi.tripwire.TripwirePlugin
+api-version: '1.21'
+author: cev-api
+website: https://github.com/cev-api
+description: Removes fletcher tripwire hook buy trades and lets admins toggle the embargo.
+commands:
+  hookembargo:
+    description: Shows or sets the tripwire hook trade embargo.
+    usage: /hookembargo [true|false]
+    permission: tripwire.admin
+permissions:
+  tripwire.admin:
+    description: Allows viewing and changing the tripwire hook embargo.
+    default: op
